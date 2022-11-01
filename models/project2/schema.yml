@@ -1,12 +1,17 @@
 version: 2
 
 models:
+  - name: q1
+    columns:
+      - name: id
+      - name: text
   - name: q2
     columns:
       - name: year
-        tests:
-          test_q1:
-            rowc: 5
       - name: month
       - name: count
+  - name: q3
+    columns:
+      - name: src
+      - name: dst
 
