@@ -14,6 +14,7 @@ You will use [DBT](https://www.getdbt.com/product/what-is-dbt/) for this project
 
 Read the [Project 2 Setup document](https://github.com/w4111/project2-f22-template/blob/main/Project%202%20setup.pdf) to set up BigQuery, DBT and a git repository
 
+**Important** You will submit the sql files that are on the models folder. **DO NOT CHANGE THE FILES NAMES**
 ## Refresher
 You will write queries to answer the following questions about the dataset.
 
