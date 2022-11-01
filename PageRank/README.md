@@ -1,7 +1,7 @@
 # Question 7
 The PageRank algorithm is used to rank the importance of nodes in a graph. It works by counting the number of edges incident to a node to determine how important the node is. The underlying assumption is that more important nodes are likely to receive more links from other nodes. Find the top 20 nodes with the highest PageRank in the graph.
 
-Hint: You may use iterative implementation for PageRank (like the BFS example mentioned below). Alternatively, you may use the WITH RECURSIVE syntax to write a single recursive query.
+Hint: You may use the WITH RECURSIVE syntax to write a single recursive query.
 
 You must run the algorithm for 20 iterations and your output table should contain the following columns:
 
@@ -24,12 +24,7 @@ A node u without inbound nodes will have empty $B_u$, and a node u without outbo
 
 For this question, you can implement the simplified version of the PageRank algorithm. To read more about PageRank, you can refer to the following link: [PageRank](http://ilpubs.stanford.edu:8090/422/1/1999-66.pdf)
 
-You will develop an iterative solution, i.e. your python code will act as a driver and issue multiple queries. As an example of an iterative solution, we provided an iterative implementation of Breadth First Search on the starter code.
-
-To execute 5 iterations using A as a start node, call bfs('A', 5). The example saves the nodes visited at each iteration in a table distances, along with their distance to the initial node. The function returns the contents of distances. (Note that iteration in BFS is different from iteration in PageRank. Each iteration in BFS just search one level deeper. Each iteration in PageRank update all nodes.)
-
 ## Write your solution on Pagerank1.sql
-Modify the function page_rank() below.
 
 You can store your intermediate result in any temp tables.
 
