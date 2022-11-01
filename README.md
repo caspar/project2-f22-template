@@ -123,4 +123,4 @@ Your anwser should be a single query. You need to run it and get the output cont
 no_of_triangles
 
 ## Question 7, 8
-See the PageRank subfolder
+See the [PageRank subfolder](https://github.com/w4111/project2-f22-template/tree/main/PageRank)
