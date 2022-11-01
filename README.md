@@ -63,7 +63,7 @@ Your answer should be a single query. You need to run it and get the output cont
 * count (number of tweets mentioned the slogan in the month)
 The result should be ordered by the count descendingly.
 
-Hint: look at the documentation for parsing strings into dates and the date functions.
+Hint: look at the documentation for parsing [strings](https://cloud.google.com/bigquery/docs/reference/standard-sql/string_functions) into dates and the [date functions](https://cloud.google.com/bigquery/docs/reference/standard-sql/date_functions).
 
 You should write your model on file q2.sql
 
