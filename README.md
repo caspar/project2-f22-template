@@ -6,10 +6,14 @@ Value: 5% of your grade
 Max team of 2
 Many graph analysis compute network centrality, density, shortest paths, and other path-based statistics about a graph. It may seem that writing a one-off Python script is a good way to perform this analysis, but it turns out that SQL is pretty great at doing this type of analysis!
 
-You will use [DBT](https://www.getdbt.com/product/what-is-dbt/) for this project, alongside with BigQuery (Google's data warehouse service)! This is a great opportunity to use a tool that has some popularity in companies for data-related tasks. You can see the instructions for setting up dbt and BigQuery here.
+You will use [DBT](https://www.getdbt.com/product/what-is-dbt/) for this project, alongside with BigQuery (Google's data warehouse service)! This is a great opportunity to use a tool that has some popularity in companies for data-related tasks.
+
+## Setup
+
+Read the [Project 2 Setup document](https://github.com/w4111/project2-f22-template/blob/main/Project%202%20setup.pdf) to set up BigQuery, DBT and a git repository
 
 ## Refresher
-You will write queries or short Python programs to answer the following questions about the dataset.
+You will write queries to answer the following questions about the dataset.
 
 In the simple case, graphs have the following schema:
 ```SQL
