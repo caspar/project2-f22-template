@@ -38,8 +38,8 @@ For example:
 "Trump shows in the New York Times Magazine " is a match
 Your answer should be a single query. You need to run it and get the output containing the columns (note that the column order matters for the whole project!!!):
 
-id (tweetid of the tweets)
-text (tweet_text of the tweets)
+* id (tweetid of the tweets)
+* text (tweet_text of the tweets)
 
 ## Question 2
 "MakeAmericaGreatAgain" (often abbreviated as MAGA) is a campaign slogan used in American politics that was popularized by Donald Trump in his successful 2016 presidential campaign.
@@ -50,9 +50,9 @@ The months in different years are considered different.
 
 Your anwser should be a single query. You need to run it and get the output containing the columns:
 
-year (a number of four digits. E.g., 2015)
-month (a number from 1 to 12. E.g., May should be 5)
-count (number of tweets mentioned the slogan in the month)
+* year (a number of four digits. E.g., 2015)
+* month (a number from 1 to 12. E.g., May should be 5)
+* count (number of tweets mentioned the slogan in the month)
 The result should be ordered by the count descendingly.
 
 Hint: look at the documentation for parsing strings into dates and the date functions.
@@ -71,8 +71,8 @@ Create a table “Graph” (make sure the name is exactly the same) with column 
 
 This question doesn't need output. You must save this table since you will be using it for the next few questions. Your table should contain the following columns:
 
-  src
-  dst
+  * src
+  * dst
 
 ## Question 4
 The indegree of a node in a directed graph is defined as the number of edges which are incoming on the node. Similarly, the outdegree of a node in a directed graph is defined as the number of edges which are outgoing from the node. For more information, you can read - Indegree and Outdegree
