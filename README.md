@@ -56,7 +56,7 @@ Let's find out Top 5 months that get the maximum mention of this slogan "MAGA"(c
 
 The months in different years are considered different.
 
-Your anwser should be a single query. You need to run it and get the output containing the columns:
+Your answer should be a single query. You need to run it and get the output containing the columns:
 
 * year (a number of four digits. E.g., 2015)
 * month (a number from 1 to 12. E.g., May should be 5)
@@ -91,10 +91,12 @@ The indegree of a node in a directed graph is defined as the number of edges whi
 
 Using this information, find out from the GRAPH table which user has the highest indegree and which user has the highest outdegree.
 
-Your anwser should be a single query with a single tuple as the output. You need to run it and get the output containing the columns:
+Your answer should be a single query with a single tuple as the output. You need to run it and get the output containing the columns:
 
-max_indegree (contains the username that has been mentioned the most)
-max_outdegree (contains the username that has mentioned the most number of different users)
+* max_indegree (contains the username that has been mentioned the most)
+* max_outdegree (contains the username that has mentioned the most number of different users)
+
+
 Note that, during grading, we will provide the right Graph table.
 
 You should write your model on file q4.sql
@@ -118,7 +120,9 @@ Now, compute the following: given all tweets by unpopular users, what percentage
 
 You can use temporary tables to do this question (no need to implement in a single query). Your final output should contain the column:
 
-unpopular_popular
+* unpopular_popular  
+
+
 Cast your final result as DOUBLE in unpopular_popular. For instance, if 50% of tweets by unpopular users mention a popular user, the final output should be 0.5.
 
 You should write your model on file q5.sql
@@ -129,9 +133,9 @@ Given a graph G = (V, E), a “triangle” is a set of three different vertices 
 
 In a directed graph, the direction of the edges matter. A -> B -> C -> A and A -> C -> B -> A will count as 2 triangles.
 
-Your anwser should be a single query. You need to run it and get the output containing the columns:
+Your answer should be a single query. You need to run it and get the output containing the columns:
 
-no_of_triangles
+* no_of_triangles
 
 You should write your model on file q6.sql
 
