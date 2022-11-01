@@ -133,7 +133,7 @@ Given a graph G = (V, E), a “triangle” is a set of three different vertices 
 
 In a directed graph, the direction of the edges matter. A -> B -> C -> A and A -> C -> B -> A will count as 2 triangles.
 
-Your answer should be a single query. You need to run it and get the output containing the columns:
+Your answer should be a single query. You need to run it and get the output containing the column:
 
 * no_of_triangles
 
