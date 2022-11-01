@@ -20,11 +20,10 @@ You will write queries to answer the following questions about the dataset.
 
 In the simple case, graphs have the following schema:
 ```SQL
-    nodes(id int primary key, )
+nodes(id int primary key, )
     edges(
       src int NOT NULL references nodes(id),
-      dst int NOT NULL references nodes(id),
-      
+      dst int NOT NULL references nodes(id), 
     )
 ```
 Recall that in graph analysis, you are interested in finding neighbors of nodes or paths between nodes. Following an edge in the graph corresponds to a JOIN. For example, the following finds all neighbors of node id 2:
@@ -48,6 +47,8 @@ Your answer should be a single query. You need to run it and get the output cont
 * id (tweetid of the tweets)
 * text (tweet_text of the tweets)
 
+You should write your model on file q1.sql
+
 ## Question 2
 "MakeAmericaGreatAgain" (often abbreviated as MAGA) is a campaign slogan used in American politics that was popularized by Donald Trump in his successful 2016 presidential campaign.
 
@@ -63,6 +64,8 @@ Your anwser should be a single query. You need to run it and get the output cont
 The result should be ordered by the count descendingly.
 
 Hint: look at the documentation for parsing strings into dates and the date functions.
+
+You should write your model on file q2.sql
 
 ## Question 3
 
@@ -80,6 +83,8 @@ This question doesn't need output. You must save this table since you will be us
 
   * src
   * dst
+  
+You should write your model on file q3.sql
 
 ## Question 4
 The indegree of a node in a directed graph is defined as the number of edges which are incoming on the node. Similarly, the outdegree of a node in a directed graph is defined as the number of edges which are outgoing from the node. For more information, you can read - Indegree and Outdegree
@@ -92,15 +97,17 @@ max_indegree (contains the username that has been mentioned the most)
 max_outdegree (contains the username that has mentioned the most number of different users)
 Note that, during grading, we will provide the right Graph table.
 
+You should write your model on file q4.sql
 
 ## Question 5
 
 Let us define 4 categories of Twitter users. For a given user U, we will use the number of users that mention U in their tweets (i.e. indegree) as the first metric, and the average number of likes that U receives for their tweets as the second metric. Then we can classify each user as follows:
 
-High indegree, high average number of likes (popular users)
-High indegree, low average number of likes
-Low indegree, high average number of likes
-Low indegree, low average number of likes (unpopular users)
+High indegree, high average number of likes (popular users)  
+High indegree, low average number of likes  
+Low indegree, high average number of likes  
+Low indegree, low average number of likes (unpopular users)  
+
 We define the indegree and average number of likes to be high or low based on the rules below:
 
 If indegree < avg(indegree of all users in the graph) then indegree is said to be low for the user, else it is considered high. A user is in the graph if it's either src or dst of an edge.
@@ -114,6 +121,7 @@ You can use temporary tables to do this question (no need to implement in a sing
 unpopular_popular
 Cast your final result as DOUBLE in unpopular_popular. For instance, if 50% of tweets by unpopular users mention a popular user, the final output should be 0.5.
 
+You should write your model on file q5.sql
 
 ## Question 6
 
@@ -124,6 +132,8 @@ In a directed graph, the direction of the edges matter. A -> B -> C -> A and A -
 Your anwser should be a single query. You need to run it and get the output containing the columns:
 
 no_of_triangles
+
+You should write your model on file q6.sql
 
 ## Question 7, 8
 See the [PageRank subfolder](https://github.com/w4111/project2-f22-template/tree/main/PageRank)
