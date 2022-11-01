@@ -1,4 +1,4 @@
-# (Extra Credit) Question 7
+# Extra Credit Question 7
 The PageRank algorithm is used to rank the importance of nodes in a graph. It works by counting the number of edges incident to a node to determine how important the node is. The underlying assumption is that more important nodes are likely to receive more links from other nodes. Find the top 20 nodes with the highest PageRank in the graph.
 
 Hint: You may use the WITH RECURSIVE syntax to write a single recursive query.
