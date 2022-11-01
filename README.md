@@ -1,9 +1,11 @@
 # Project 2: Graph Analysis
 
-Released: 11/01
-Due: 11/29 10AM
-Value: 5% of your grade
-Max team of 2
+Released: 11/01  
+Due: 11/29 23:55  
+Value: 5% of your grade  
+A maximum of **3 Late Days** can be used on this project  
+Max team of 2  
+
 Many graph analysis compute network centrality, density, shortest paths, and other path-based statistics about a graph. It may seem that writing a one-off Python script is a good way to perform this analysis, but it turns out that SQL is pretty great at doing this type of analysis!
 
 You will use [DBT](https://www.getdbt.com/product/what-is-dbt/) for this project, alongside with BigQuery (Google's data warehouse service)! This is a great opportunity to use a tool that has some popularity in companies for data-related tasks.
