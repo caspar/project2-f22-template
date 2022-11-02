@@ -34,7 +34,7 @@ Similarly, if we have a table goodnodes that contains IDs of nodes that we are i
 ```SQL
     SELECT dst FROM edges, goodnodes WHERE edges.src = goodnodes.id;
 ```
-## Question 1
+## Question 1 (3 points)
 Find the id and text of Tweets whose text contains "MAGA" and "Trump" (both case-insensitive).
 
 For example:
@@ -49,7 +49,7 @@ Your answer should be a single query. You need to run it and get the output cont
 
 You should write your model on file q1.sql
 
-## Question 2
+## Question 2 (3 points)
 "MakeAmericaGreatAgain" (often abbreviated as MAGA) is a campaign slogan used in American politics that was popularized by Donald Trump in his successful 2016 presidential campaign.
 
 Let's find out Top 5 months that get the maximum mention of this slogan "MAGA"(case-insensitive) in tweet_text.
@@ -67,7 +67,7 @@ Hint: look at the documentation for parsing [strings](https://cloud.google.com/b
 
 You should write your model on file q2.sql
 
-## Question 3
+## Question 3 (5 points)
 
 Let's construct the Graph!
 
@@ -86,7 +86,7 @@ This question doesn't need output. You must save this table since you will be us
   
 You should write your model on file q3.sql
 
-## Question 4
+## Question 4 (5 points)
 The indegree of a node in a directed graph is defined as the number of edges which are incoming on the node. Similarly, the outdegree of a node in a directed graph is defined as the number of edges which are outgoing from the node. For more information, you can read - Indegree and Outdegree
 
 Using this information, find out from the GRAPH table which user has the highest indegree and which user has the highest outdegree.
@@ -101,7 +101,7 @@ Note that, during grading, we will provide the right Graph table.
 
 You should write your model on file q4.sql
 
-## Question 5
+## Question 5 (5 points)
 
 Let us define 4 categories of Twitter users. For a given user U, we will use the number of users that mention U in their tweets (i.e. indegree) as the first metric, and the average number of likes that U receives for their tweets as the second metric. Then we can classify each user as follows:
 
@@ -127,7 +127,7 @@ Cast your final result as DOUBLE in unpopular_popular. For instance, if 50% of t
 
 You should write your model on file q5.sql
 
-## Question 6
+## Question 6 (6 points)
 
 Given a graph G = (V, E), a “triangle” is a set of three different vertices that are mutually adjacent in G i.e. given 3 nodes of a graph A, B, C there exist edges A->B, B->C and C->A which form a triangle in the graph. From the graph table which you created above, find out the number of different triangles in the graph.
 
