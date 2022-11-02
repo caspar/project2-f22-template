@@ -2,16 +2,47 @@ version: 2
 
 models:
   - name: q1
+    description: "Model for question 1"
     columns:
       - name: id
+        description: "tweetid of the tweets"
       - name: text
+        description: "tweet_text of the tweets"
+
   - name: q2
+    description: "Model for question 2"
     columns:
       - name: year
+        description: "a number of four digits. E.g., 2015"
       - name: month
+        description: "a number from 1 to 12. E.g., May should be 5"
       - name: count
-  - name: q3
+        description: "number of tweets mentioned the slogan in the month"
+
+  - name: Graph
+    description: "Graph for question 3"
     columns:
       - name: src
+        description: "tweet_username of user who posted the tweet"
       - name: dst
+        description: "tweet_username of user who is mentioned in the tweet"
 
+  - name: q4
+    description: "Model for question 4"
+    columns:
+      - name: max_indegree
+        description: "contains the username that has been mentioned the most"
+      - name: max_outdegree
+        description: "contains the username that has mentioned the most number of different users"
+
+  - name: q5
+    description: "Model for question 5"
+    columns:
+      - name: unpopular_popular
+        description: "percentage of all tweets by unpopular users that mention a popular user"
+
+  - name: q6
+    description: "Model for question 6"
+    columns:
+      - name: no_of_triangles
+        description: "the number of different triangles in the graph"
