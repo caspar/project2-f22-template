@@ -22,7 +22,7 @@ $$PR(u) = \sum_{v \in B_u}^{\frac{PR(v)}{L(v)}}$$
 
 A node u without inbound nodes will have empty $B_u$, and a node u without outbound nodes won't contribute to the PageRank of any other nodes.
 
-For this question, you can implement the simplified version of the PageRank algorithm. To read more about PageRank, you can refer to the following link: [PageRank](http://ilpubs.stanford.edu:8090/422/1/1999-66.pdf)
+To read more about PageRank, you can refer to the following link: [PageRank](http://ilpubs.stanford.edu:8090/422/1/1999-66.pdf)
 
 ## Write your solution on Pagerank1.sql
 
