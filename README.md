@@ -86,7 +86,7 @@ This question doesn't need output. You must save this table since you will be us
   
 You should write your model on file q3.sql
 
-## Question 4 (5 points)
+## Question 4 (3 points)
 The indegree of a node in a directed graph is defined as the number of edges which are incoming on the node. Similarly, the outdegree of a node in a directed graph is defined as the number of edges which are outgoing from the node. For more information, you can read - Indegree and Outdegree
 
 Using this information, find out from the GRAPH table which user has the highest indegree and which user has the highest outdegree.
