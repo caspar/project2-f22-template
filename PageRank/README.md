@@ -33,7 +33,7 @@ Make sure you return an output with the following columns:
 * `username` (the twitter_username of the user)
 * `page_rank_score` (type should be double)
 
-Please don't include twitter_username that is not in the Graph table as graph nodes. Only the Graph table is needed for this question. For the final output, including nodes whose page_rank_score is zero is optional.
+Please don't include twitter_username that is not in the Graph table as graph nodes. Only the Graph table is needed for this question. Don't include users with page_rank_score 0.
 
 # Extra Credit Question 8
 Answer the page rank question using a single recursive query.
