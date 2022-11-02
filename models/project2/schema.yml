@@ -46,3 +46,19 @@ models:
     columns:
       - name: no_of_triangles
         description: "the number of different triangles in the graph"
+
+  - name: pagerank1
+    description: "Model for question 7"
+    columns:
+      - name: username
+        description: "the username handle of an user"
+      - name: page_rank_score
+        description: "the page rank score of a user"
+
+  - name: pagerank2
+    description: "Model for question 8"
+    columns:
+      - name: username
+        description: "the username handle of an user"
+      - name: page_rank_score
+        description: "the page rank score of a user"
