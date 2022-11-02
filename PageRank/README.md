@@ -3,7 +3,7 @@ The PageRank algorithm is used to rank the importance of nodes in a graph. It wo
 
 Hint: You may use the WITH RECURSIVE syntax to write a single recursive query.
 
-You must run the algorithm for 20 iterations and your output table should contain the following columns:
+You must run the algorithm for 1 iteration and your output table should contain the following columns:
 
 * username (the twitter_username of the user)
 * page_rank_score
