@@ -1,4 +1,4 @@
-# Extra Credit Question 7
+# Extra Credit Question 7 (4 points)
 The PageRank algorithm is used to rank the importance of nodes in a graph. It works by counting the number of edges incident to a node to determine how important the node is. The underlying assumption is that more important nodes are likely to receive more links from other nodes. Find the top 20 nodes with the highest PageRank in the graph.
 
 Hint: You may use the WITH RECURSIVE syntax to write a single recursive query.
@@ -35,7 +35,7 @@ Make sure you return an output with the following columns:
 
 Please don't include twitter_username that is not in the Graph table as graph nodes. Only the Graph table is needed for this question. Don't include users with page_rank_score 0.
 
-# Extra Credit Question 8
+# Extra Credit Question 8 (4 points)
 Answer the page rank question using a single recursive query.
 
 To get started, read the SQL slides about recursive WITH clauses. In the Fibonacci example, each iteration of the `WITH RECURSIVE fib` clause (recursive step) simply queried fib to produce new tuples. For page rank, you may need to join tables in each iteration.
