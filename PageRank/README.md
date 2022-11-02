@@ -35,8 +35,6 @@ Make sure you return an output with the following columns:
 
 Please don't include twitter_username that is not in the Graph table as graph nodes. Only the Graph table is needed for this question. For the final output, including nodes whose page_rank_score is zero is optional.
 
-Notice that, for any runq inside the page_rank, please use runq(initial_rank, db).
-
 # Extra Credit Question 8
 Answer the page rank question using a single recursive query.
 
