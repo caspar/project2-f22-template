@@ -5,8 +5,8 @@ Hint: You may use the WITH RECURSIVE syntax to write a single recursive query.
 
 You must run the algorithm for 1 iteration and your output table should contain the following columns:
 
-* username (the twitter_username of the user)
-* page_rank_score
+* `username` (the twitter_username of the user)
+* `page_rank_score`
 
 This algorithm works as follows - Assume a small universe of four web pages: A, B, C and D. PageRank is initialized to the same value for all pages since we assume a probability distribution between 0 and 1 as the PageRank for each node. Hence the initial value for each page in this example is 0.25. If the only links in the system were from pages B->A, C->A and D->A, each link would transfer 0.25 PageRank to A upon the next iteration, for a total of 0.75 i.e.
 
@@ -30,8 +30,8 @@ You can store your intermediate result in any temp tables.
 
 Make sure you return an output with the following columns:
 
-* username (the twitter_username of the user)
-* page_rank_score (type should be double)
+* `username` (the twitter_username of the user)
+* `page_rank_score` (type should be double)
 
 Please don't include twitter_username that is not in the Graph table as graph nodes. Only the Graph table is needed for this question. For the final output, including nodes whose page_rank_score is zero is optional.
 
