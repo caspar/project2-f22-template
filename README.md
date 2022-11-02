@@ -44,8 +44,8 @@ For example:
 "Trump shows in the New York Times Magazine " is a match
 Your answer should be a single query. You need to run it and get the output containing the columns (note that the column order matters for the whole project!!!):
 
-* id (tweetid of the tweets)
-* text (tweet_text of the tweets)
+* `id` (tweetid of the tweets)
+* `text` (tweet_text of the tweets)
 
 You should write your model on file q1.sql
 
@@ -58,9 +58,9 @@ The months in different years are considered different.
 
 Your answer should be a single query. You need to run it and get the output containing the columns:
 
-* year (a number of four digits. E.g., 2015)
-* month (a number from 1 to 12. E.g., May should be 5)
-* count (number of tweets mentioned the slogan in the month)
+* `year` (a number of four digits. E.g., 2015)
+* `month` (a number from 1 to 12. E.g., May should be 5)
+* `count` (number of tweets mentioned the slogan in the month)
 The result should be ordered by the count descendingly.
 
 Hint: look at the documentation for parsing [strings](https://cloud.google.com/bigquery/docs/reference/standard-sql/string_functions) into dates and the [date functions](https://cloud.google.com/bigquery/docs/reference/standard-sql/date_functions).
@@ -81,8 +81,8 @@ Create a table “Graph” (make sure the name is exactly the same) with column 
 
 This question doesn't need output. You must save this table since you will be using it for the next few questions. Your table should contain the following columns:
 
-  * src
-  * dst
+  * `src`
+  * `dst`
   
 You should write your model on file q3.sql
 
@@ -93,8 +93,8 @@ Using this information, find out from the GRAPH table which user has the highest
 
 Your answer should be a single query with a single tuple as the output. You need to run it and get the output containing the columns:
 
-* max_indegree (contains the username that has been mentioned the most)
-* max_outdegree (contains the username that has mentioned the most number of different users)
+* `max_indegree` (contains the username that has been mentioned the most)
+* `max_outdegree` (contains the username that has mentioned the most number of different users)
 
 
 Note that, during grading, we will provide the right Graph table.
@@ -120,7 +120,7 @@ Now, compute the following: given all tweets by unpopular users, what percentage
 
 You can use temporary tables to do this question (no need to implement in a single query). Your final output should contain the column:
 
-* unpopular_popular  
+* `unpopular_popular`  
 
 
 Cast your final result as DOUBLE in unpopular_popular. For instance, if 50% of tweets by unpopular users mention a popular user, the final output should be 0.5.
@@ -135,7 +135,7 @@ In a directed graph, the direction of the edges matter. A -> B -> C -> A and A -
 
 Your answer should be a single query. You need to run it and get the output containing the column:
 
-* no_of_triangles
+* `no_of_triangles`
 
 You should write your model on file q6.sql
 
