@@ -31,12 +31,14 @@ Make sure you return an output with the following columns:
 * `username` (the twitter_username of the user)
 * `page_rank_score` (type should be double)
 
+You **Don't need to execute multiple iterations of pagerank.** Just run the first iteration
+
 Please don't include twitter_username that is not in the Graph table as graph nodes. Only the Graph table is needed for this question. Don't include users with page_rank_score 0.
 
 # Extra Credit Question 8 (4 points)
 Answer the page rank question using a single recursive query.
 
-To get started, read the SQL slides about recursive WITH clauses. In the Fibonacci example, each iteration of the `WITH RECURSIVE fib` clause (recursive step) simply queried fib to produce new tuples. For page rank, you may need to join tables in each iteration.
+To get started, read the SQL slides about recursive WITH clauses. In the Fibonacci example, each iteration of the `WITH RECURSIVE fib` clause (recursive step) simply queried fib to produce new tuples.
 
 # Check Your Results
 
