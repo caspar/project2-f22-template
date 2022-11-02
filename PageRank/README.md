@@ -1,8 +1,6 @@
 # Extra Credit Question 7 (4 points)
 The PageRank algorithm is used to rank the importance of nodes in a graph. It works by counting the number of edges incident to a node to determine how important the node is. The underlying assumption is that more important nodes are likely to receive more links from other nodes. Find the top 20 nodes with the highest PageRank in the graph.
 
-Hint: You may use the WITH RECURSIVE syntax to write a single recursive query.
-
 You must run the algorithm for **1 iteration of pagerank** and your output table should contain the following columns:
 
 * `username` (the twitter_username of the user)
