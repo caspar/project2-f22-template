@@ -1,3 +1,9 @@
+
+# Update log
+* Nov 7th: Updated role assignment for service account (should be Owner instead of BigQuery Data Owner)
+* Nov 7th: Created document guiding how to update role for service accounts that already exists ([here](https://github.com/w4111/project2-f22-template/blob/main/Adding%20role%20to%20your%20existing%20key.pdf))
+
+
 # Project 2: Graph Analysis
 
 Released: 11/01  
@@ -5,6 +11,7 @@ Due: 11/29 23:55
 Value: 5% of your grade  
 A maximum of **3 Late Days** can be used on this project  
 Max team of 2  
+
 
 Many graph analysis compute network centrality, density, shortest paths, and other path-based statistics about a graph. It may seem that writing a one-off Python script is a good way to perform this analysis, but it turns out that SQL is pretty great at doing this type of analysis!
 
