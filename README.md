@@ -1,5 +1,6 @@
 
 # Update log
+* Nov 12th: Added new images to assist with setup
 * Nov 7th: Updated role assignment for service account (should be Owner instead of BigQuery Data Owner)
 * Nov 7th: Created document guiding how to update role for service accounts that already exists ([here](https://github.com/w4111/project2-f22-template/blob/main/Adding%20role%20to%20your%20existing%20key.pdf))
 
