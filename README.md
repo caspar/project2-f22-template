@@ -1,5 +1,7 @@
 
 # Update log
+* Nov 20th: Changed description to use 'q3' naming instead of 'graph' for the mentions graph
+* Nov 20th: Use FLOAT instead of Double
 * Nov 12th: Added new images to assist with setup
 * Nov 7th: Updated role assignment for service account (should be Owner instead of BigQuery Data Owner)
 * Nov 7th: Created document guiding how to update role for service accounts that already exists ([here](https://github.com/w4111/project2-f22-template/blob/main/Adding%20role%20to%20your%20existing%20key.pdf))
@@ -85,14 +87,30 @@ For example, the string ".a@eugene123's" mentions eugene123. The string "@TIME a
 
 Tweets and mentions can be used to construct the graph where each row is an edge from tweet_username to the username that is mentioned in the tweet text. For instance, if the username eugene tweeted "hi @elliot", then there would be an edge eugene -> elliot. We call eugene the src and elliot the dst. In this project, you can assume that there is at most one mention in a tweet, so you simply need to extract the first one.
 
-Create a table “Graph” (make sure the name is exactly the same) with column names src and dst which stores the edge list of the graph. You must store only the distinct edges in the table. One user might mention another user in more than one tweet, but you should only save the edge once (i.e. only one row in the graph table). You should not store any edge whose src or dst is missing.
+Create a table “q3” with column names src and dst which stores the edge list of the graph. You must store only the distinct edges in the table. One user might mention another user in more than one tweet, but you should only save the edge once (i.e. only one row in the graph table). You should not store any edge whose src or dst is missing.
 
-This question doesn't need output. You must save this table since you will be using it for the next few questions. Your table should contain the following columns:
+Note that creating a table simply means running 
+```dbt run <path to q3.sql>``` in the dbt console.
+
+You must save this table since you will be using it for the next few questions. Your table should contain the following columns:
 
   * `src`
   * `dst`
   
 You should write your model on file q3.sql
+
+You will need to refer to this table for the next questions using:
+```
+<dataset_name>.q3
+```
+for instance
+
+```SQL
+SELECT * FROM <dataset_name>.q3;
+```
+
+The dataset name is the one that you created on the setup phase and can be seen on your google cloud project (It's where your tables are stored!)
+
 
 ## Question 4 (3 points)
 The indegree of a node in a directed graph is defined as the number of edges which are incoming on the node. Similarly, the outdegree of a node in a directed graph is defined as the number of edges which are outgoing from the node. For more information, you can read - Indegree and Outdegree
@@ -131,7 +149,7 @@ You can use temporary tables to do this question (no need to implement in a sing
 * `unpopular_popular`  
 
 
-Cast your final result as DOUBLE in unpopular_popular. For instance, if 50% of tweets by unpopular users mention a popular user, the final output should be 0.5.
+Cast your final result as FLOAT in unpopular_popular. For instance, if 50% of tweets by unpopular users mention a popular user, the final output should be 0.5.
 
 You should write your model on file q5.sql
 
