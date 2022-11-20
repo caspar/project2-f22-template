@@ -90,7 +90,7 @@ Tweets and mentions can be used to construct the graph where each row is an edge
 Create a table “q3” with column names src and dst which stores the edge list of the graph. You must store only the distinct edges in the table. One user might mention another user in more than one tweet, but you should only save the edge once (i.e. only one row in the graph table). You should not store any edge whose src or dst is missing.
 
 Note that creating a table simply means running 
-```dbt run <path to q3.sql>``` in the dbt console.
+```dbt run --select <path-to-q3.sql>``` in the dbt console.
 
 You must save this table since you will be using it for the next few questions. Your table should contain the following columns:
 
