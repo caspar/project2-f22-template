@@ -60,9 +60,9 @@ Your answer should be a single query. You need to run it and get the output cont
 You should write your model on file q1.sql
 
 ## Question 2 (3 points)
-"MakeAmericaGreatAgain" (often abbreviated as MAGA) is a campaign slogan used in American politics that was popularized by Donald Trump in his successful 2016 presidential campaign.
+"MakeAmericaGreatAgain" is often abbreviated as "MAGA".  "MAGA" was campaign slogan used in American politics that was popularized by Donald Trump in his successful 2016 presidential campaign.
 
-Let's find out Top 5 months that get the maximum mention of this slogan "MAGA"(case-insensitive) in tweet_text.
+Let's find out Top 5 months that get the maximum mention of the string "MAGA"(case-insensitive) in tweet_text.
 
 The months in different years are considered different.
 
